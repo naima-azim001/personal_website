@@ -1,0 +1,6 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My Personal Site"
+
+[permalinks]
+  blog = "/blog/:slug/"

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+</head>
+<body>
+    <header>
+        <h1>{{ .Site.Title }}</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about-me/">About</a>
+            <a href="/projects/">Projects</a>
+            <a href="/blog/">Blog</a>
+            <a href="/contact/">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+        
+        <!-- List child pages -->
+        {{ range .Pages }}
+            <article>
+                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                {{ .Summary }}
+            </article>
+        {{ end }}
+    </main>
+
+    <footer>
+        <p>© {{ now.Format "2006" }} {{ .Site.Title }}</p>
+    </footer>
+</body>
+</html>
