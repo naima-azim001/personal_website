@@ -1,7 +1,5 @@
 ---
-title: "About Meeeee"
-date: 2023-09-20
-draft: false
+title: "About Me" 
 ---
 
 <div style="text-align: center; font-size: 20px;">

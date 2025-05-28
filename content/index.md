@@ -3,7 +3,7 @@ title: "Personal Website"
 ---
 
 # Welcome to My Website
-
+![Welcome Image](/images/background-2.png)
 <div style="text-align: center; font-size: 20px;">
 I'm passionate about technology, creativity, and continuous learning.  
 Here, you'll find a collection of my projects, experiments, and ideas — ranging from code and design  
